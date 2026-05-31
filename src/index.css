@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900 font-sans antialiased;
+}
+
+.markdown-body {
+  @apply text-slate-700 leading-relaxed;
+}
+
+.markdown-body h1 { @apply text-2xl font-bold mt-6 mb-4 text-slate-900; }
+.markdown-body h2 { @apply text-xl font-semibold mt-5 mb-3 text-slate-800; }
+.markdown-body h3 { @apply text-lg font-medium mt-4 mb-2 text-slate-800; }
+.markdown-body p { @apply mb-4; }
+.markdown-body hr { @apply border-slate-200 my-8; }
+.markdown-body ul { @apply list-none pl-0 space-y-2 mb-6; }
+.markdown-body li { @apply flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4 text-slate-600 border-b border-slate-50 pb-2 last:border-0; }
+.markdown-body li strong { @apply min-w-[100px] text-slate-900 font-bold uppercase text-[10px] tracking-widest block sm:inline; }
+.markdown-body a { @apply text-blue-600 hover:underline; }
